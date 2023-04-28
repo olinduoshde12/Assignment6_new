@@ -1,0 +1,791 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+    <!--<link rel="stylesheet" href="assets/style/nor.css">-->
+    <title>Title</title>
+    <style>
+        .navbar{
+            position: sticky;
+            box-shadow: 1px 1px 10px 1px black;
+        }
+        .navbar-nav>a{
+            margin: 15px;
+            font-size: 20px;
+        }
+        section{
+            width: 99vw;
+            height: 99vh;
+            position: relative;
+            /*border: 1px solid white;*/
+            overflow: hidden;
+            background-color: #2b2b2b;
+        }
+        section>h1{
+            position: relative;
+            top: 27px;
+            left: 1.9vw;
+            text-align: start;
+            color: #ffcd00;
+            font-size: 4vh;
+            font-weight: bold;
+            text-shadow: 5px 5px 9px rgba(0, 0, 0, 0.8);
+        }
+        section>#div1{
+            position: absolute;
+            top: 120px;
+            left: 20px;
+            width: 20vw;
+            height: 6vh;
+            border: 1px solid black;
+            outline-color: rgba(255, 167, 6, 0.8);
+            outline-style: double;
+
+            border-radius: 10px;
+        }
+        section>#div1>h4{
+            position: relative;
+            top: 1vh;
+            left: 20px;
+            font-size: 2.5vh;
+            font-optical-sizing: inherit;
+            color: white;
+        }
+        section>#div2{
+            position: absolute;
+            top: 120px;
+            left: 23vw;
+            width: 25vw;
+            height: 6vh;
+            border: 1px solid rgba(255, 167, 6, 0.8);
+            outline-style: double;
+            outline-color: rgba(255, 167, 6, 0.8);
+            border-radius: 10px;
+        }
+        section>#div2>h4{
+            position: relative;
+            top: 1vh;
+            left: 20px;
+            font-size: 2.5vh;
+            color: white;
+            font-optical-sizing: inherit;
+        }
+        section>#div2>{
+            position: relative;
+            top: 60px;
+            left: 12vw;
+            text-align: start;
+            font-weight: bold;
+            color: rgb(224, 243, 235);
+        }
+        section>#div3{
+            position: absolute;
+            top: 120px;
+            left: 50vw;
+            width: 28vw;
+            height: 6vh;
+            border: 1px solid rgba(255, 167, 6, 0.8);
+            outline-style: double;
+            outline-color: rgba(255, 167, 6, 0.8);
+            border-radius: 10px;
+        }
+        section>#div3>h4{
+            position: relative;
+            top: 1vh;
+            left: 20px;
+            font-size: 2.5vh;
+            color: white;
+            font-optical-sizing: inherit;
+        }
+        section>button{
+            position: absolute;
+            top: 14.5vh;
+            left: 80vw;
+            width: 17vw;
+        }
+        section>.d-grid>.btn{
+           position: absolute;
+            top: 122px;
+            left: 82vw;
+            align-items: center;
+            justify-content: center;
+        }
+        section>.btn1>#bt1{
+            position: absolute;
+            top: 205px;
+            left: 35vw;
+            gap: 12px;
+        }
+        section>.btn1>#bt2{
+            position: absolute;
+            top: 205px;
+            left: 50vw;
+            gap: 12px;
+        }
+        .table{
+            position: relative;
+            top: 42vh;
+            width: 95vw;
+            left: 30px;
+            border-radius: 20px;
+
+        }
+        .se1{
+            position: absolute;
+            width: 47vw;
+            top: 285px;
+            left: 25vw;
+            height: 5.5vh;
+            border: 1px solid white;
+            background-color: #ffffff;
+            border-radius: 20px;
+        }
+        .se1>h1{
+            position: absolute;
+            top: 8px;
+            left: 20px;
+            font-size: 20px;
+            color: #081145;
+        }
+        /* Place Holder section3*/
+    .section3{
+        width: 99vw;
+        height: 99vh;
+        position: relative;
+        /*border: 1px solid #ff0000;*/
+        overflow: hidden;
+        background-color: #2b2b2b;
+
+    }
+        .section3>h1{
+            position: relative;
+            top: 14px;
+            left: 1.9vw;
+            text-align: start;
+            color: #ffcd00;
+            font-size: 4vh;
+            font-weight: bold;
+            text-shadow: 5px 5px 9px rgba(0, 0, 0, 0.8);
+
+        }
+        .section3>div{
+            position: absolute;
+            height: 47vh;
+            width: 28vw;
+            top: 16vh;
+            left: 40px;
+            background-color: #ffcd00;
+           border: 1px solid rgba(0, 0, 0, 0.8);
+            box-shadow: 1px 1px 10px 1px black;
+
+        }
+        .section3>div>div{
+            width: 28vw;
+            height: 6vh;
+            background-color: rgb(8, 17, 69);
+
+        }
+        .section3>div>div>h1{
+            position: absolute;
+            top: 8px;
+            left: 30px;
+            font-size: 24px;
+            color: white;
+        }
+        .section3>div>#d1{
+            top: 80px;
+            position: absolute;
+            height: 4vh;
+            width: 12vw;
+            left: 17px;
+            border: 1px solid white;
+            border-radius: 8px;
+            background: white;
+        }
+        .section3>div>#d1>h6{
+            top: 8px;
+            position: absolute;
+            color: #081145;
+            left: 15px;
+        }
+        .section3>div>#d2{
+            top: 150px;
+            position: absolute;
+            height: 4vh;
+            width: 12vw;
+            left: 17px;
+            border: 1px solid white;
+            border-radius: 8px;
+            background: white;
+        }
+        .section3>div>#d2>h6{
+            top: 8px;
+            position: absolute;
+            color: #081145;
+            left: 12px;
+        }
+        .section3>div>#d3{
+            top: 230px;
+            position: absolute;
+            height: 4vh;
+            width: 12vw;
+            left: 17px;
+            border: 1px solid white;
+            border-radius: 8px;
+            background: white;
+        }
+        .section3>div>#d3>h6{
+            top: 7px;
+            position: absolute;
+            color: #081145;
+            left: 12px;
+        }
+        .section3>div>#d4{
+            top: 320px;
+            position: absolute;
+            height: 5vh;
+            width: 25vw;
+            left: 17px;
+            border: 1px solid white;
+            border-radius: 8px;
+            background: white;
+        }
+        .section3>div>#d4>h6{
+            top: 7px;
+            position: absolute;
+            color: #081145;
+            left: 12px;
+        }
+        .section3>div>#d5{
+            top: 80px;
+            position: absolute;
+            height: 4vh;
+            width: 12vw;
+            left: 250px;
+            border: 1px solid white;
+            border-radius: 8px;
+            background: white;
+        }
+        .section3>div>#d5>h6{
+            top: 7px;
+            position: absolute;
+            color: #081145;
+            left: 12px;
+        }
+        .section3>div>#d6{
+            top: 150px;
+            position: absolute;
+            height: 4vh;
+            width: 12vw;
+            left: 250px;
+            border: 1px solid white;
+            border-radius: 8px;
+            background: white;
+        }
+        .section3>div>#d6>h6{
+            top: 7px;
+            position: absolute;
+            color: #081145;
+            left: 12px;
+        }
+        .section3>div>#d7{
+            top: 230px;
+            position: absolute;
+            height: 4vh;
+            width: 12vw;
+            left: 250px;
+            border: 1px solid white;
+            border-radius: 8px;
+            background: white;
+        }
+        .section3>div>#d7>h6{
+            top: 7px;
+            position: absolute;
+            color: #081145;
+            left: 12px;
+        }
+        .section3>.dclass1{
+            position: absolute;
+            height: 47vh;
+            width: 38vw;
+            top: 16vh;
+            left: 565px;
+            background-color: #ffcd00;
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            box-shadow: 1px 1px 10px 1px black;
+        }
+        .section3>.dclass1>#d8{
+            width: 38vw;
+            height: 6vh;
+            background-color: rgb(8, 17, 69);
+        }
+        .section3>.dclass1>#d8>h6{
+            top: 8px;
+            position: absolute;
+            color: #ffffff;
+            left: 15px;
+        }
+        .section3>.dclass1>#d9{
+            position: absolute;
+            height: 4vh;
+            width: 15vw;
+            top: 80px;
+            left: 25px;
+            background-color: white;
+            border: 1px solid white;
+            border-radius: 5px;
+        }
+        .section3>.dclass1>#d9>h6{
+            top: 8px;
+            position: absolute;
+            color: rgba(0, 0, 0, 0.8);
+            left: 15px;
+        }
+        .section3>.dclass1>#d10{
+            position: absolute;
+            height: 4vh;
+            width: 15vw;
+            top: 150px;
+            left: 25px;
+            background-color: white;
+            border: 1px solid white;
+            border-radius: 5px;
+        }
+        .section3>.dclass1>#d10>h6{
+            top: 8px;
+            position: absolute;
+            color: rgba(0, 0, 0, 0.8);
+            left: 15px;
+        }
+        .section3>.dclass1>#d11{
+            position: absolute;
+            height: 4vh;
+            width: 7vw;
+            top: 150px;
+            left: 310px;
+            background-color: white;
+            border: 1px solid white;
+            border-radius: 5px;
+        }
+        .section3>.dclass1>#d11>h6{
+            top: 8px;
+            position: absolute;
+            color: rgba(0, 0, 0, 0.8);
+            left: 15px;
+        }
+        .section3>.dclass1>#d12{
+            position: absolute;
+            height: 4vh;
+            width: 7vw;
+            top: 150px;
+            left: 470px;
+            background-color: white;
+            border: 1px solid white;
+            border-radius: 5px;
+        }
+        .section3>.dclass1>#d12>h6{
+            top: 8px;
+            position: absolute;
+            color: rgba(0, 0, 0, 0.8);
+            left: 15px;
+        }
+        .section3>.dclass1>#d13{
+            position: absolute;
+            height: 4vh;
+            width: 33vw;
+            top: 220px;
+            left: 25px;
+            background-color: rgb(255, 255, 255);
+            border: 1px solid white;
+            border-radius: 5px;
+        }
+        .section3>.dclass1>#d13>h6{
+            top: 8px;
+            position: absolute;
+            color: rgb(8, 17, 69);
+            left: 15px;
+        }
+        .section3>.dclass1>button{
+            position: absolute;
+            top: 299px;
+            left: 185px;
+            width: 18vw;
+        }
+        .section3>.dclass2{
+            position: absolute;
+            height: 47vh;
+            width: 20vw;
+            top: 16vh;
+            left: 75vw;
+            background-color: #aefbff;
+            border: 1px solid rgba(0, 0, 0, 0.8);
+            box-shadow: 1px 1px 10px 1px black;
+        }
+        .section3>.dclass2>h4{
+            position: absolute;
+            left: 35px;
+            top: 35px;
+            color: #550568;
+            font-weight: bold;
+        }
+        .section3>.dclass2>#h01{
+            position: absolute;
+            left: 35px;
+            top: 100px;
+            color: #550568;
+            font-weight: bold;
+        }
+        .section3>.dclass2>#d14{
+            position: absolute;
+            height: 4vh;
+            width: 7vw;
+            top: 165px;
+            left: 35px;
+            background-color: white;
+            border: 1px solid white;
+            border-radius: 5px;
+        }
+        .section3>.dclass2>#d14>h6{
+            top: 8px;
+            position: absolute;
+            color: rgba(0, 0, 0, 0.8);
+            left: 15px;
+        }
+        .section3>.dclass2>#d15{
+            position: absolute;
+            height: 4vh;
+            width: 17vw;
+            top: 220px;
+            left: 35px;
+            background-color: white;
+            border: 1px solid white;
+            border-radius: 5px;
+        }
+        .section3>.dclass2>#d15>h6{
+            top: 8px;
+            position: absolute;
+            color: rgba(0, 0, 0, 0.8);
+            left: 15px;
+        }
+        .section3>.dclass2>#d16{
+            position: absolute;
+            height: 4vh;
+            width: 7vw;
+            top: 165px;
+            left: 185px;
+            background-color: white;
+            border: 1px solid white;
+            border-radius: 5px;
+        }
+        .section3>.dclass2>#d16>h6{
+            top: 8px;
+            position: absolute;
+            color: rgba(0, 0, 0, 0.8);
+            left: 15px;
+        }
+        .section3>.dclass2>button{
+            position: absolute;
+            top: 295px;
+            left: 75px;
+            width: 12vw;
+        }
+        .section3>.table1{
+            position: absolute;
+            top: 70vh;
+            left: 40px;
+            width: 93vw;
+            color: white;
+        }
+
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">
+                <img src="assets/img/customer.png"  width="30" height="24" class="d-inline-block align-text-top">
+                POS system
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    <a class="nav-link" href="#">Customer</a>
+                    <a class="nav-link" href="#">Item</a>
+                    <a class="nav-link" href="#">Place order</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+<section>
+        <h1>Customer Management</h1>
+
+    <div id="div1">
+        <h4>Customer_Id</h4>
+    </div>
+    <div id="div2">
+        <h4>Customer_Name</h4>
+    </div>
+    <div id="div3">
+        <h4>Email Address</h4>
+    </div>
+    <div class="d-grid gap-2">
+        <button class="btn btn-primary" type="button">+ Register Customer</button>
+    </div>
+   <div class="btn1">
+       <button type="button" class="btn btn-primary" id="bt1">Update Customer</button>
+       <button type="button" class="btn btn-warning" id="bt2">Search Customer</button>
+   </div>
+    <div class="se1">
+        <h1>Search Customer Id or Name</h1>
+    </div>
+    <div>
+    <table class="table text-bg-warning">
+        <thead class="table-dark">
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Customer_Id</th>
+            <th scope="col">Customer Name</th>
+            <th scope="col">Customer address</th>
+            <th scope="col">Customer Salary</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr style="font-weight: bold">
+            <th scope="row">1</th>
+            <td>C001</td>
+            <td>Olindu Oshda</td>
+            <td>Aluthgama</td>
+            <td>Rs.500 000</td>
+        </tr>
+        <tr style="font-weight: bold">
+            <th scope="row">2</th>
+            <td>C002</td>
+            <td>Chatura Perera</td>
+            <td>Mathugama</td>
+            <td>Rs.100 000 </td>
+        </tr>
+        <tr style="font-weight: bold">
+            <th scope="row">3</th>
+            <td>C003</td>
+            <td>Tharindu danushka</td>
+            <td>Mathara</td>
+            <td>Rs.600 000</td>
+        </tr>
+        <tr style="font-weight: bold">
+            <th scope="row">4</th>
+            <td>C004</td>
+            <td>Dasun Shanka</td>
+            <td>Colombo</td>
+            <td>Rs.200 000</td>
+        </tr>
+        <tr style="font-weight: bold">
+            <th scope="row">5</th>
+            <td>C005</td>
+            <td>Deshan perera</td>
+            <td>Mathara</td>
+            <td>Rs.70 000</td>
+        </tr>
+        <tr style="font-weight: bold">
+            <th scope="row">6</th>
+            <td>C006</td>
+            <td>Kasun Silva</td>
+            <td>Mathara</td>
+            <td>Rs.80 000</td>
+        </tr>
+        <tr style="font-weight: bold">
+            <th scope="row">7</th>
+            <td>C007</td>
+            <td>nima perera</td>
+            <td>Mathara</td>
+            <td>Rs.90 000</td>
+        </tr>
+        </tbody>
+    </table>
+    </div>
+</section>
+<section>
+    <h1>Item Management</h1>
+
+    <div id="div1">
+        <h4>Item_code</h4>
+    </div>
+    <div id="div2">
+        <h4>Item_Name</h4>
+    </div>
+    <div id="div3">
+        <h4>Item Price</h4>
+    </div>
+    <div class="d-grid gap-2">
+        <button class="btn btn-primary" type="button">+ Register Item</button>
+    </div>
+    <div class="btn1">
+        <button type="button" class="btn btn-primary" id="bt1">Update Item</button>
+        <button type="button" class="btn btn-warning" id="bt2">Search Item</button>
+    </div>
+    <div class="se1">
+        <h1>Search Item Code or Name</h1>
+    </div>
+    <div>
+        <table class="table text-bg-warning" id="tb1">
+            <thead class="table-dark">
+            <tr>
+                <th scope="col">#</th>
+                <th scope="col">Item_code</th>
+                <th scope="col">Item Name</th>
+                <th scope="col">Item Price</th>
+                <th scope="col">Item Qty </th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr style="font-weight: bold">
+                <th scope="row">1</th>
+                <td>I001</td>
+                <td>Apple 11 pro Max</td>
+                <td>Rs.150 000</td>
+                <td>10</td>
+            </tr>
+            <tr style="font-weight: bold">
+                <th scope="row">2</th>
+                <td>I002</td>
+                <td>Hp Laptop</td>
+                <td>Rs.300 000</td>
+                <td>20</td>
+            </tr>
+            <tr style="font-weight: bold">
+                <th scope="row">3</th>
+                <td>I003</td>
+                <td>Apple 13 Pro Max</td>
+                <td>Rs.250 000</td>
+                <td>15</td>
+            </tr>
+            <tr style="font-weight: bold">
+                <th scope="row">4</th>
+                <td>I004</td>
+                <td>Samsung Galaxy S22 Ultra</td>
+                <td>Rs.200 000</td>
+                <td>6</td>
+            </tr>
+            <tr style="font-weight: bold">
+                <th scope="row">5</th>
+                <td>I005</td>
+                <td>Asus Vivo Book</td>
+                <td>Rs.250 000</td>
+                <td>70</td>
+            </tr>
+            <tr style="font-weight: bold">
+                <th scope="row">6</th>
+                <td>I006</td>
+                <td>MacBook Pro</td>
+                <td>Rs.250 000</td>
+                <td>80</td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+
+</section>
+<section class="section3">
+<h1>Place Order</h1>
+    <div>
+        <div>
+            <h1>Invoice Details</h1>
+        </div>
+        <div id="d1">
+                <h6>Order_Id</h6>
+        </div>
+        <div id="d2">
+                <h6>Customer_Id</h6>
+        </div>
+        <div id="d3">
+            <h6>Customer_Name</h6>
+        </div>
+
+        <div id="d4">
+            <h6>Customer_Address</h6>
+        </div>
+
+        <div id="d5">
+            <h6>Date</h6>
+        </div>
+        <div id="d6">
+            <h6>Address</h6>
+        </div>
+        <div id="d7">
+            <h6>Salary</h6>
+        </div>
+    </div>
+    <div class="dclass1">
+            <div id="d8" >
+                <h1>Item Select</h1>
+            </div>
+        <div id="d9">
+                <h6>Item</h6>
+        </div>
+        <div id="d10">
+            <h6>Item_Name</h6>
+        </div>
+        <div id="d11">
+            <h6>Price</h6>
+        </div>
+        <div id="d12">
+            <h6>qtyH</h6>
+        </div>
+        <div id="d13">
+            <h6>Order qty</h6>
+        </div>
+
+        <button type="button" class="btn btn-success">Add Item</button>
+    </div>
+    <div class="dclass2">
+        <h4>Total:Rs 200 000</h4>
+        <h4 id="h01">SubTotal:Rs.120 000</h4>
+        <div id="d14">
+            <h6>Cash</h6>
+        </div>
+        <div id="d15">
+            <h6>Balance</h6>
+        </div>
+        <div id="d16">
+            <h6>Cash</h6>
+        </div>
+        <button type="button" class="btn btn-success">Purchase</button>
+    </div>
+    <table class="table1 text-bg-light table-danger">
+        <thead style="background-color: black" >
+        <tr style="background-color: #081145">
+            <th scope="col">#</th>
+            <th scope="col">Iteam_Code</th>
+            <th scope="col">Item Name</th>
+            <th scope="col">price</th>
+            <th scope="col">quantity</th>
+            <th scope="col">Total</th>
+        </tr>
+        </thead>
+        <tbody style="background-color: gold">
+        <tr style="font-weight: bold">
+            <th scope="row">1</th>
+            <td>P001</td>
+            <td>MacBook pro</td>
+            <td>Rs.250 000</td>
+            <td>20</td>
+            <td>Rs.240 000</td>
+        </tr>
+        <tr style="font-weight: bold">
+            <th scope="row">2</th>
+            <td>P002</td>
+            <td>Apple Iphone 11 Pro Max</td>
+            <td>Rs.150 000</td>
+            <td>20</td>
+            <td>Rs.100 000</td>
+        </tr>
+        </tbody>
+
+    </table>
+</section>
+</body>
+</html>
